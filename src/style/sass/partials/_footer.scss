@@ -1,0 +1,51 @@
+.footer {
+  background-color: $main;
+  color: #ffffff;
+  display: flex;
+  padding: 0;
+  text-align: center;
+  justify-content: space-between;
+  align-content: center;
+  @include flex__row;
+}
+.footer__col {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.icon {
+  margin: 1em;
+}
+.footer__icons {
+  & a {
+    display: inline-block;
+    color: $color__beige;
+    @include transition;
+    &:hover {
+      color: $color__beige;
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+}
+.footer__menu {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  & a {
+    color: $color__grey;
+    @include transition;
+    margin: 0;
+    padding: 0.5em;
+  }
+  & a:hover {
+    @include hover;
+    color: $color__beige;
+    text-decoration: none;
+    opacity: 1;
+  }
+}
+.footer__p {
+  margin-bottom: -0.2em;
+}

@@ -1,0 +1,24 @@
+.header {
+  @include flex__row;
+  width: 100%;
+  align-content: center;
+}
+.avatar__col {
+  width: 300px;
+  max-width: 300px;
+}
+.avatar {
+  width: 100%;
+}
+.home__icons {
+  & a {
+    display: inline-block;
+    color: $main;
+    @include transition;
+    &:hover {
+      color: $color__main;
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+}

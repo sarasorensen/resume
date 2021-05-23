@@ -1,0 +1,28 @@
+body {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  min-height: 110vh;
+  background-color: $color__beige;
+}
+.wrap {
+  min-height: 85vh;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.list li {
+  list-style: none;
+  text-align: center;
+
+  font-weight: 200;
+  font-size: 1.35rem;
+  line-height: 30pt;
+}
+.row {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}

@@ -1,0 +1,55 @@
+.btn {
+  @include button;
+  @include transition;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  background-color: $main;
+  color: #ffffff;
+  border: 1px solid $main;
+  text-transform: uppercase;
+  width: 35%;
+  padding: 0.5em;
+  letter-spacing: 0.1em;
+}
+.btn--second {
+  @include button;
+  @include transition;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  background-color: #3c3c3c;
+  color: #ffffff;
+  border: 1px solid #3c3c3c;
+  text-transform: uppercase;
+  width: 35%;
+  padding: 0.5em;
+  letter-spacing: 0.1em;
+}
+.btn__project {
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+.col--buttons {
+  width: 100%;
+  min-width: 100%;
+  padding: 0;
+  @include flex__row;
+  justify-content: flex-start;
+  margin: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .btn {
+    width: 100%;
+  }
+  .btn--second {
+    width: 100%;
+  }
+  .avatar {
+    display: none;
+  }
+}

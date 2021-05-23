@@ -1,0 +1,46 @@
+.link {
+  color: $color__grey;
+}
+.link::before {
+  content: "\2192 ";
+  color: $main;
+  font-weight: 900;
+}
+.link:hover {
+  cursor: pointer;
+  color: $main;
+  text-decoration: underline;
+}
+.link__inline {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  font-weight: 300;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.link__inline:hover {
+  opacity: 1;
+  color: $main;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  text-decoration: none;
+}
+.link__inline--footer {
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  font-weight: 300;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.link__inline--footer:hover {
+  opacity: 1;
+  color: $color__beige;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  text-decoration: none;
+}
